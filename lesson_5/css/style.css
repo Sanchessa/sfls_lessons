@@ -150,6 +150,7 @@ section.krovato__about {
 }
 .krovato__choose-bed_list {
     padding-left: 47px;
+    margin-bottom: 48px;
 }
 .krovato__choose-bed_list > li{
     font-size: 16px;
