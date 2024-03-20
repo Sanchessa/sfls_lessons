@@ -21,7 +21,7 @@
 
 /* СЕКЦІЯ ECOMMERCE-FOLLOW */
 
-section.ecommerce {
+.ecommerce {
     background-color: hsla(210, 24%, 16%, 0.05);
 }
 .follow__products {
@@ -62,7 +62,7 @@ section.ecommerce {
 
 /* СЕКЦІЯ КРОВАТО-ЦЕ */
 
-section.krovato__about {
+.krovato__about {
     background-color: #f8f8f8;
 }
 .krovato__products {
