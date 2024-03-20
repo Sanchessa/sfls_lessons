@@ -46,16 +46,6 @@
     display: inline-block;
     margin-right: 24px;
 }
-.item__1 {
-}
-.item__2 {
-}
-.item__3 {
-}
-.item__4 {
-}
-.item__5 {
-}
 .item__6 {
     margin: 0;
 }
@@ -112,9 +102,6 @@
     line-height: 1.875; /* 30px/16 */
 }
 
-
-.krovato__choose {
-}
 .krovato__choose-bed {
     font-family: 'Proxima Nova';
     color: #2b2929;
