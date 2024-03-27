@@ -245,6 +245,9 @@
     font-weight: 500;
     line-height: 1.25;
 }
+.about__list_elem > a:hover{
+    text-decoration: underline;
+}
 .about__list_elem:not(:last-child){
     margin-right: 60px;
 }
@@ -285,6 +288,9 @@
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
+}
+.consult__list_elem > a:hover {
+    text-decoration: underline;
 }
 .consult__list_elem:not(:last-child) {
     margin-right: 80px;
