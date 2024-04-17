@@ -1,0 +1,532 @@
+/* Підключення файлу обнулення */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Підключення шрифтів через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:regular,500,600,700&display=swap");
+/* --------------------------- */
+
+/* ------------------ */
+[class*="__container"] {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* ------------------ */
+
+/* ------------- СЕКЦІЯ HEADER-------------- */
+.header{
+	padding: 34px 0px 30px 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+.header__title {
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+
+/* ------------- СЕКЦІЯ POLIGON -------------- */
+.poligon {
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 50px;
+}
+.poligon__link{
+	line-height: 1.2;
+	font-weight: 700;
+}
+.poligon__link:not(:last-child){
+	margin-right: 15px;
+}
+
+.poligon__link.link-1{
+	color: #fff;
+	background-color: rgb(248, 228, 56);
+	padding: 15px 20px;
+	border-radius: 32px;
+	font-size: 20px;
+}
+
+.poligon__link.link-1 span {
+	display: inline-block;
+	background: url('../img/ecommerceMinimal/icon_bag.svg') 0 0 / contain no-repeat;
+	padding-left: 34px;
+}
+.poligon__link.link-1:hover{
+	background-color: #00c2d3;
+}
+.poligon__link.link-1:visited{
+	background-color: #71c1c8;
+}
+
+.poligon__link.link-2{
+	background-color: #0caebc;
+	padding: 15px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+.poligon__link.link-2 span{
+	display: inline-block;
+	background: url('../img/krovato/mark.svg') 0 0 / contain no-repeat;
+	padding-left: 34px;
+}
+.poligon__link.link-2:hover{
+	background-color: rgb(248, 228, 56);
+}
+.poligon__link.link-2:active{
+	background-color: rgb(30, 173, 234);
+}
+
+.poligon__link.link-3{
+	color: #fff;
+	background-color: #8B3DFF;
+	padding: 15px;
+	font-weight: 700;
+	line-height: 1.56;
+	border-radius: 10px;
+}
+.poligon__link.link-3 span{
+	display: inline-block;  
+	background: url('../img/eduplay/favourite.svg') 0 0 no-repeat;
+	padding-left: 34px;
+}
+.poligon__link.link-3:focus-visible{
+	outline: 2px dashed #8B3DFF;
+}
+
+.poligon__block_container{
+	font-size: 0;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.poligon__block {
+	max-width: 250px;
+	display: inline-block;
+	/* vertical-align: bottom; */
+	margin-right: 20px;
+	padding: 20px;
+	font-size: 16px;
+	background-color: #8B3DFF;
+}
+
+/* Поясніть, як тримаються блоки, якщо починаючи з 3-го, в них немає margin, чому тоді ножні блоки не приліпають до верхніх? */
+.poligon__block:not(:nth-child(n + 3)){
+	margin-bottom: 20px;
+}
+.poligon__block:nth-child(4n + 1){
+	margin-right: 0px;
+}
+/* Валідатор видає помилку, чому так не можна робити? */
+.poligon__block:has( > span):nth-child(odd){
+	background-color: #7e48cf;
+}
+
+.link__show{
+	display: block;
+	max-width: max-content;
+	margin: 20px 0px;
+}
+.link__show:hover{
+	color: #8B3DFF;
+	text-decoration: underline;
+}
+.poligon__block.block-1{
+	display: none;
+}
+.poligon__block.block-1:target{
+	display: block;
+}
+
+.block__test_elem {
+	display: inline-block;
+	max-width: 250px;
+	color: #fff;
+	background-color: #000;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+.block__test_elem:not(:last-child){
+	margin-right: 15px;
+}
+.block__test_elem:hover{
+	background-color: #2c2c2c;
+}
+.block__test_elem-title {
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.block__test_elem-title::after {
+	content: '';
+	width: 80%;
+	height: 2px;
+	background-color: #fff;
+}
+.block__test_elem-text {
+	line-height: 1.2;
+}
+
+
+.last_child_test {
+	margin: 0 auto;
+	color: #fff;
+	padding: 50px 0px 50px 20px;
+	background-color: #000;
+	max-width: 700px;
+	margin-bottom: 40px;
+}
+.last_child_test > *:not(:last-child) {
+	margin-bottom: 20px;
+}
+.test_title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.test_text {
+	line-height: 1.3;
+}
+.test_link {
+	padding: 15px 30px 15px;
+	background-color: yellow;
+	color: black;
+	font-weight: 600;
+}
+.test_link:hover{
+	text-decoration: underline;
+	background-color: rgb(174, 255, 201);
+}
+
+/* --------- CЕКЦІЯ ABOUT ---------- */
+
+.about {
+	font-family: 'Exo', sans-serif;
+	padding: 120px 181px 120px;
+	background-color: #000;
+	color: #fff;
+}
+.about__title {
+	max-width: 400px;
+	margin: 0 auto;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.16;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.about__title:after{
+	content: '';
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 1px;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+.about__text {
+	max-width: 1030px;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 400;
+	line-height: 2.22; /* 40px/18 */
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+.about__list{
+	/* max-width: 1280px; */
+	font-size: 0;
+}
+.about__list > *{
+	display: inline-block;
+	font-size: 20px;
+	font-family: "Orbitron",sans-serif;
+	font-weight: 500;
+	line-height: 1.25;
+}
+.about__list_elem > a:hover{
+	text-decoration: underline;
+}
+.about__list_elem:not(:last-child){
+	margin-right: 60px;
+}
+.about__list_elem::after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	margin-left: 60px;
+	border-radius: 100%;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+
+/* --------- CЕКЦІЯ CONSULT ---------- */
+
+.consult {
+	font-family: 'Exo', sans-serif;
+	padding: 100px 181px 120px;
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 100px;
+}
+.consult__title {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.16;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.consult__title:after {
+	content: '';
+	display: block;
+	margin: 20px 0 40px 0;
+	max-width: 958px;
+	/* width: 100%; */
+	height: 1px;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+.consult__list > * {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+}
+.consult__list_elem > a:hover {
+	text-decoration: underline;
+}
+.consult__list_elem:not(:last-child) {
+	margin-right: 80px;
+}
+.item-2{
+	text-transform: capitalize;
+}
+.item-1::before{
+	content: '';
+	vertical-align: top;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/portfolio/Call.svg') 0 0 / 100% no-repeat;
+}
+.item-2::before{
+	content: '';
+	vertical-align: top;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/portfolio/Location.svg') 0 0 / 100% no-repeat;
+}
+.item-3::before{
+	content: '';
+	vertical-align: middle;
+	margin-right: 15px;
+	width: 20px;
+	height: 15px;
+	background: url('../img/portfolio/Email.svg') 0 0 / 100% no-repeat;
+}
+
+/* --------- CЕКЦІЯ KROVATO ---------- */
+
+.krovato {
+	font-family: "Proxima Nova", sans-serif;
+	color: #2b2929;
+	margin-bottom: 100px;
+}
+.krovato__container {
+	max-width: 1070px;
+}
+.krovato__container > *:last-child {
+	margin-bottom: 0px;
+}
+.krovato__title {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.2; /* 48px/40 */
+	margin-bottom: 40px;
+}
+.krovato__image img{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.krovato__text {
+	font-weight: 400;
+	line-height: 1.875;
+	margin-bottom: 40px;
+}
+.krovato__text > p:not(:last-child){
+	margin-bottom: 10px;
+}
+.krovato__subtitle {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 22px;
+}
+.krovato__list {
+	font-weight: 400;
+	line-height: 1.875;
+}
+.krovato__list_item {
+	background: url('../img/krovato/mark.svg') 0 0 no-repeat;
+	padding-left: 47px;
+}
+.krovato__list_item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/* --------- CЕКЦІЯ GAME ---------- */
+
+.game {
+	font-size: 0;
+	max-width: 1000px;
+	min-height: 640px;
+	margin: 0 auto;
+	background-color: #000;
+	padding: 50px;
+	margin-bottom: 150px;
+}
+.game_area {
+	background-color: #8B3DFF;
+}
+.game_area-1 {
+	width: 20px;
+	height: 20px;
+}
+.game_area-2 {
+	width: 20px;
+	height: 20px;
+}
+.game_area-1:hover + .game_area-2,
+.game_area-2:hover{
+	width: 100%;
+}
+.game_area-3 {
+	margin-left: 100%;
+	visibility: hidden;
+	margin-top: -20px;
+	width: 20px;
+	height: 100px;
+}
+.game_area-2:hover ~ .game_area-3,
+.game_area-3:hover{
+	visibility: visible;
+}
+.game_area-4{
+	width: 100%;
+	height: 20px;
+	visibility: hidden;
+	margin-top: -20px;
+}
+.game_area-3:hover ~ .game_area-4,
+.game_area-4:hover{
+	visibility: visible;
+}
+.game_area-5{
+	width: 20px;
+	height: 160px;
+	visibility: hidden;
+	margin-top: -20px;
+}
+.game_area-4:hover ~ .game_area-5,
+.game_area-5:hover{
+	visibility: visible;
+}
+.game_area-6{
+	width: 160px;
+	height: 20px;
+	display: inline-block;
+	visibility: hidden;
+	margin-top: -20px;
+}
+.game_area-5:hover ~ .game_area-6,
+.game_area-6:hover{
+	visibility: visible;
+}
+.game_area-7{
+	width: 20px;
+	height: 100px;
+	display: inline-block;
+	visibility: hidden;
+	margin-bottom: -80px;
+}
+.game_area-6:hover ~ .game_area-7,
+.game_area-7:hover{
+	visibility: visible;
+}
+.game_area-8{
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+	visibility: hidden;
+	margin-bottom: -80px;
+}
+.game_area-7:hover ~ .game_area-8,
+.game_area-8:hover{
+	visibility: visible;
+}
+.game_area-9{
+	width: 20px;
+	height: 100px;
+	display: inline-block;
+	visibility: hidden;
+	margin-bottom: -80px;
+}
+.game_area-8:hover ~ .game_area-9,
+.game_area-9:hover{
+	visibility: visible;
+}
+.game_area-10{
+	width: 340px;
+	height: 20px;
+	display: inline-block;
+	visibility: hidden;
+	margin-top: -80px;
+}
+.game_area-9:hover ~ .game_area-10,
+.game_area-10:hover{
+	visibility: visible;
+}
+.game_area-11{
+	width: 20px;
+	height: 280px;
+	display: inline-block;
+	visibility: hidden;
+	margin-bottom: -260px;
+}
+.game_area-10:hover ~ .game_area-11,
+.game_area-11:hover{
+	visibility: visible;
+}
+.game_area-12{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: rgb(230, 21, 31);
+	visibility: hidden;
+	margin-bottom: -260px;
+}
+.game_area-11:hover ~ .game_area-12,
+.game_area-12:hover{
+	visibility: visible;
+}
+.game_image {
+	background: url('../img/game_img.jpg') 0 0 / cover no-repeat;
+	visibility: hidden;
+	height: 250px;
+	width: 450px;
+}
+.game_area-12:hover ~ .game_image,
+.game_image:hover{
+	visibility: visible;
+}
+
+
+.footer{
+	font-family: "Quicksand", sans-serif;
+	max-width: 1000px;
+	font-weight: 600;
+	font-size: 25px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
