@@ -1,0 +1,70 @@
+/* Підключення файлу обнулення */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Підключення шрифтів через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,600&display=swap");
+
+/* ------------------ */
+[class*="__container"] {
+    max-width: 980px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+/* ------------------ */
+body{
+    font-family: Montserrat, sans-serif;
+}
+/* ------------- СЕКЦІЯ HEADER-------------- */
+.header {
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header h1{
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+/* ------------- СЕКЦІЯ FRAME-------------- */
+.subtitle{
+    padding: 35px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.frame {
+    background-color: #fefae0;
+    padding: 15px;
+    outline: 1px dotted black;
+}
+.block:not(:last-child) {
+    margin-bottom: 20px;
+}
+.block img{
+    vertical-align: middle;
+}
+.text {
+    padding-left: 10px;
+    font-size: 20px;
+    display: inline-block;
+}
+.text:hover{
+    text-decoration: underline;
+    color: rgb(23, 109, 194);
+}
+.block-png img{
+    max-width: 400px;
+    width: 100%;
+    border: 1px dashed black;
+}
+.block-big img{
+    max-width: 400px;
+    width: 100%;
+}
+.footer{
+    padding: 50px 15px;
+}
