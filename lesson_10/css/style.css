@@ -1,0 +1,283 @@
+/* Підключення файлу обнулення */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Підключення шрифтів через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+/* ------------------ */
+body {
+	font-family: "Proxima Nova", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ------------------ */
+
+.header {
+	background-color: #FFFFFF;
+	font-size: 0;
+	/* position: sticky; */
+}
+.header__container{
+	padding: 27px 0;
+}
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.logo__image {
+	margin-right: 34px;
+}
+.categories{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.button {
+	padding: 11px 20px;
+	background-color: #FFBC57;
+	border-radius: 8px;
+	color: #FFF;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.button::before {
+	content: '';
+	background: url(../img/krovato/menu-catalog.svg) 0 0 no-repeat;
+	margin-right: 10px;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+}
+.button span {
+	vertical-align: middle;
+}
+.button > *:not(:last-child) { 
+	margin-right: 10px;
+}
+.button > *{
+	vertical-align: middle;
+}
+
+.categories__menu {
+	position: absolute;
+	top: calc(100% + 35px);
+	right: calc(100% - 20px);
+    min-height: 308px;
+    z-index: 50;
+    padding: 8px 0;
+    border-radius: 8px 0 0 8px;
+    /* background: linear-gradient(hsl(36deg 100% 67%), hsl(36deg 100% 67%)) right / 5px 100% no-repeat content-box, hsl(0deg 0% 100%); */
+	background: #fff;
+}
+/* .menu__list::before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 0;
+	height: 90%;
+	width: 5px;
+    border-right: 5px solid #ffbc57;
+} */
+.menu {
+	display: none;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	z-index: 50;
+}
+#menu:target{
+	display: block;
+}
+.menu__list {
+}
+.menu__item::before {
+	content: '';
+	position: absolute;
+	top: 1%;
+	right: 0;
+	width: 5px;
+	height: 98%;
+	background-color: #FFBC57;
+}
+.menu__link {
+	padding: 10px 59px 10px 30px;
+	width: 305px;
+	background: url(../img/krovato/catalog/arrow.svg) right 25px center no-repeat;
+}
+.menu__link > * {
+	vertical-align: middle;
+}
+.menu__link:hover {
+	background: url(../img/krovato/catalog/arrow_black.svg) right 25px center no-repeat, #FFBC57;
+}
+
+.menu__link img {
+	margin-right: 15px;
+}
+.sub-menu {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: hsl(0deg 0% 100%);
+    padding-block: 16px 16px;
+    width: 318px;
+    border-radius: 0 8px 8px 0;
+	overflow-y: auto;
+	height: 100%;
+	display: none;
+}
+.menu__item:hover .sub-menu{
+	display: block;
+}
+.sub-menu__link {
+	display: block;
+    padding: 12px 20px 12px 30px;
+}
+.sub-menu__link:hover {
+	background-color: #ffbc57;
+}
+
+/* ------------------ */
+.products {
+	background: #F8F8F8;
+}
+.products__container {
+	font-size: 16px;
+	padding: 70px 0;
+}
+.products__title {
+	color: #2B2929;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+.items {
+	font-size: 0;
+	margin: 0 -10px -24px 0;
+}
+.items__element {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 10px 24px 0;
+}
+.element {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	border-radius: 8px;
+	background: hsl(0deg 0% 100%);
+	padding: 20px 20px 0 20px;
+	font-size: 0;
+	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+	z-index: 5;
+	overflow: hidden;
+}
+/* .element:not(:nth-child(5n)) {
+	margin-right: 10px;
+} */
+.element::before {
+	content: "";
+    position: absolute;
+	bottom: -100px;
+	left: -15px;
+    z-index: -1;
+    width: 280px;
+    height: 280px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+.element:hover {
+	color: #FFBC57;
+}
+.element__header {
+	width: 210px;
+}
+.element__name {
+	display: inline-block;
+	min-width: 70%;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.element__count {
+	width: 30%;
+	font-size: 20px;
+	text-align: end;
+	display: inline-block;
+	color: #B1B1B1;
+	font-weight: 600;
+	line-height: 1.4;
+}
+/* .element__name {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.element__count {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	display: inline-block;
+	color: #B1B1B1;
+	font-weight: 600;
+	line-height: 1.4;
+} */
+.element__image::before {
+	content: '';
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/krovato/arrow.svg) 0 0 no-repeat;
+}
+/* ------------------ */
+.poligon {
+	font-family: Montserrat, sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0;
+
+}
+.poligon__block {
+	padding: 25px;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 600;
+	font-size: 25px;
+}
+.poligon__block:nth-child(1) {
+	background-color:cadetblue
+}
+.poligon__block:nth-child(2) {
+	background-color:chocolate;
+}
+.poligon__block:nth-child(3) {
+	background-color:blanchedalmond;
+}
+.poligon__block:nth-child(2) {
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+/* ------------------ */
