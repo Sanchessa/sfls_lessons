@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 4</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav>
+            <!-- Наразі я буду використовувати теги <br> для відступів, замість margin -->
+            <br>
+            <p>
+                Навігація сторінки:
+            </p>
+            <br>
+            <ul class="list">
+                <li><a href="#poligon">До полігону</a></li>
+                <li><a href="#block-choose-bed">Як правильно обрати ліжко?</a></li>
+                <li><a href="#block-choose-furniture">Які меблі краще вибрати?</a></li>
+                <li><a href="#footer">До низу</a></li>
+            </ul>
+            <br>
+        </nav>
+    </header>
+
+    <main class="page">
+        <h1 class="title" id="poligon">
+            Це полігон для тренування CSS-властивостей шрифтів та тексту, до 4-го уроку.
+        </h1>
+        <p>
+            Загальний шрифт заданий до всього body буде <mark>Proxima Nova</mark>, тому що він потрібен, для виконання
+            завдань з макетів.
+        </p>
+        <br>
+        <div class="block__some-text">
+            <!-- Не звертайте увагу на назви класів *first, second* і т.д., це тренувальні класи -->
+            <p class="block__some-text block_first">
+                <span>Я текст italic надрукований шрифтом Proxima Nova</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio quas, optio in dolorum
+                minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at exercitationem.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio
+                quas, optio in dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at
+                exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut
+                exercitationem ducimus distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae
+                unde amet. Voluptate, at exercitationem.
+            </p>
+            <br>
+            <p class="block__some-text block_second">
+                <span>Я ТЕКСТ НАДРУКОВАНИЙ ШРИФТОМ OSWALD</span> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Eos velit, provident aut exercitationem ducimus distinctio quas, optio in dolorum minima libero
+                eum? Laudantium recusandae beata e unde amet. Voluptate, at exercitationem.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio quas, optio in
+                dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at exercitationem.Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus
+                distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate,
+                at exercitationem.
+            </p>
+            <br>
+            <p class="block__some-text block_third">
+                <!-- Важливо завжди прописувати властивість трансформації тексту uppercase -->
+                <span>Я ТеКСТ надрукований шриФтом Playfair Display</span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio quas, optio in dolorum
+                minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at exercitationem.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio
+                quas, optio in dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at
+                exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut
+                exercitationem ducimus distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae
+                unde amet. Voluptate, at exercitationem.
+            </p>
+            <br>
+            <p class="block__some-text block_fourth">
+                <span>Я текст з тінню та відступами між літерами та відцентрований до правого краю</span> Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus distinctio
+                quas, optio in dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate, at
+                exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut
+                exercitationem ducimus distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae
+                unde amet. Voluptate, at exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                velit, provident aut exercitationem ducimus distinctio quas, optio in dolorum minima libero eum?
+                Laudantium recusandae beatae unde amet. Voluptate, at exercitationem.
+            </p>
+            <br>
+            <p class="block__some-text block_fifth">
+                <span>Я текст з відступами між словами та відцентрований до центру</span>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus
+                distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beata e unde amet. Voluptate,
+                at exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <p class="block__some-text block_six">
+                <!-- Як краще його зробити зі спанами, чи це нормальний варіант? -->
+                <span>Я закреслений текст</span> <span class="upper">Текст з великим рядковим інтервалом.</span> Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut exercitationem ducimus
+                distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae unde amet. Voluptate,
+                at exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit, provident aut
+                exercitationem ducimus distinctio quas, optio in dolorum minima libero eum? Laudantium recusandae beatae
+                unde amet. Voluptate, at exercitationem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                velit, provident aut exercitationem ducimus distinctio quas, optio in dolorum minima libero eum?
+                Laudantium recusandae beatae unde amet. Voluptate, at exercitationem.
+            </p>
+            <br>
+        </div>
+
+        <div class="block__choose-bed" id="block-choose-bed">
+            <h2 class="title__choose_bed">
+                Як правильно обрати ліжко?
+            </h2>
+            <p class="text__choose-bed">
+                При виборі ліжка в інтернет магазині Вам в першу чергу потрібно вибрати матеріал. Найбільшою
+                популярністю користуються дерев'яні ліжка, виготовлені з вільхи, ясена чи дуба. Такі моделі чудово
+                прикрасять Вашу спальню у квартирі чи приватному будинку. Для орендованих квартир, під здачу, більше
+                підійде ліжко з металу, так як воно просто «не вбивається», а також має дуже демократичну ціну.
+                Для Вашої зручності ліжко може комплектуватись висувними ящиками або підйомним механізмом. Ящики можуть
+                бути з одного боку ліжка або з двох. Також є моделі, з висувними ящиками спереду. Ліжка з підйомним
+                механізмом, це відмінне рішення, для невеликих кімнат, вони дозволяють заощадити простір і мають велику
+                нішу для зберігання постільної білизни. Всі дерев'яні ліжка комплектуються буковими ламелями. Спальне
+                місце з ламельною основою може витримувати навантаження до 150 кг на одне спальне місце. Відстань між
+                ламелями, у своїй має бути 2,5-3 див.
+                Кожне ліжко може бути забарвлене у різні кольори: чорні, білі, сірі, венге, у кольорі горіх. Завдяки
+                цьому ліжко можна підібрати під будь-який інтер'єр.
+            </p>
+            <br>
+        </div>
+
+        <div class="block__choose-furniture" id="block-choose-furniture">
+            <h2 class="title__choose-furniture">
+                Оформлення вітальні. Які м'які меблі краще вибрати?
+            </h2>
+            <div class="image__choose-furniture">
+                <img src="img/decore_furniture_image.jpg" alt="Фотографія вітальні">
+            </div>
+            <br>
+            <p>
+                Вітальня – це основна кімната у кожному будинку. Саме вона служить для прийому гостей, проведення часу
+                всією сім'єю та просто для відпочинку у приємній теплій атмосфері. Оформляючи свій будинок та вітальню
+                зокрема, всі намагаються зробити її максимально зручною, комфортною та красивою. Основним та центральним
+                елементом оформлення вітальні, як і будь-якої іншої кімнати, є м'які меблі.
+                Будь-які меблі для вітальні повинні бути не тільки стильними і красивими, але і функціональними. На
+                таких меблів має бути зручно та приємно відпочивати та приймати гостей. Однак сьогодні існує величезна
+                різноманітність найрізноманітніших м'яких меблів для вітальні, яка підходить для кімнат різних розмірів
+                і форм. На чому варто зупинити свій вибір? Як краще оформити свою вітальню, щоб вам було комфортно, а
+                гості хотіли приходити до вас знову та знову?
+            </p>
+            <br>
+            <h3 class="subtitle__choose-furniture">
+                На сайті інтернет магазину Кровато представлено велику різноманітність м'яких меблів для вітальні, серед
+                яких кожен зможе вибрати для себе найбільш вдалий варіант. У нас ви знайдете:
+            </h3>
+            <br>
+            <ul class="list__choose-furniture">
+                <li>
+                    Прямі дивани. Такі дивани вважаються класикою. Вони підходять для віталень будь-яких форм та
+                    розмірів. Прямий диван виглядає стильно та лаконічно, на ньому зручно відпочивати, приймати гостей
+                    або навіть спати. Прямі дивани можуть стояти біля стіни, так і в центрі кімнати. Багато моделей
+                    прямих диванів легко розкладаються, перетворюючись на повноцінне спальне місце. Також більшість
+                    диванів мають великі та місткі ніші, які є додатковим місцем для зберігання;
+                </li>
+                <li>
+                    Кутові дивани Кутові дивани вважаються найзручнішими та комфортнішими. Вони ідеально підійдуть для
+                    приємного проведення часу в колі сім'ї або друзів. Кутові дивани в основному використовуються для
+                    оформлення великих віталень, так як вони займають багато місця, і для кімнат з невеликою площею
+                    просто не підійдуть;
+                </li>
+                <li>
+                    Тахти. Тахта - це одна з варіацій дивана, але стильніша і мінімалістична. Виглядають тахти дуже
+                    незвично і можуть підійти для будь-якого інтер'єру. Також тахти більше ніж звичайні дивани підходять
+                    для сну, оскільки в їх основі не пружинні блоки, а дерев'яні ламелі або ортопедичні матраци;
+                </li>
+                <li>
+                    Крісла. Крісло – це особливий предмет інтер'єру. Сучасні дизайнери не часто використовують його,
+                    вважаючи застарілим, проте саме крісла створюють особливий затишок та комфорт у будь-якій кімнаті.
+                    Сьогодні існує величезна різноманітність класичних та сучасних моделей крісел, що дозволяє кожному
+                    відшукати ідеальне крісло для свого будинку;
+                </li>
+                <li>
+                    Набір меблів. Комплект м'яких меблів – це відмінне рішення для тих, хто хоче меблювати свою вітальню
+                    не лише диваном, а й кріслами. Існують набори з одним або двома кріслами, із прямими або кутовими
+                    диванами. Основна перевага будь-якого готового меблевого гарнітура – це те, що предмети меблів у
+                    ньому ідеально поєднуються один з одним, і вам не потрібно буде витрачати свій час та сили на їхній
+                    підбір.
+                </li>
+            </ul>
+            <p>
+                Підбір м'яких меблів для вітальні – це заняття непросте. Однак при виборі та покупці меблів для своєї
+                вітальні пам'ятайте, що якісні м'які меблі повинні бути не тільки красивими, але й зручними для вас і
+                всіх мешканців вашого будинку.
+            </p>
+            <br>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <a href="#header">До гори</a>
+    </footer>
+    <br>
+</body>
+
+</html>
