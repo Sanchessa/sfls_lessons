@@ -31,14 +31,14 @@ body {
 
 .scene {
 	position: relative;
-	background: url(../img/kremlin.jpg) 0px -100px/cover no-repeat;
+	background: url(../img/kremlin.webp) 0px -100px/cover no-repeat;
 	height: 100vh;
 }
 .scene__fire {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../img/kremlin-fire.jpg) 0px -60px/cover no-repeat;
+	background: url(../img/kremlin-fire.webp) 0px -60px/cover no-repeat;
 	min-width: 100%;
 	height: 100vh;
 	opacity: 0;
