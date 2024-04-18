@@ -361,7 +361,7 @@ body {
 .president-text--3 {
 	animation-name: text-president;
 	animation-duration: 5s;
-	animation-delay: 29s;
+	animation-delay: 31s;
 }
 
 @keyframes poroshenko {
@@ -395,7 +395,7 @@ body {
 .president--3 {
 	animation-name: poroshenko;
 	animation-duration: 5s;
-	animation-delay: 24s;
+	animation-delay: 26s;
 	animation-fill-mode: forwards;
 }
 .z-prezident {
