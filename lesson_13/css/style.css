@@ -533,12 +533,27 @@ body {
 .promotions-categories__images {
 	display: flex;
 	gap: 30px;
-	overflow-y: scroll;
+	overflow-x: auto;
+    /* scroll-snap-type: inline proximity; */
 }
-.promotions-categories__header {
+.images-promotions__link{
+	overflow: hidden;
+    border-radius: 8px;
+    flex: 0 0 410px;
+    height: 280px;
+    /* scroll-snap-align: start; */
+}
+.images-promotions__link > img{
+	overflow: hidden;
+	transition: transform 0.4s;
+}
+.images-promotions__link:hover > img {
+	transform: scale(1.1);
+}
+/* .promotions-categories__header {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 .footer {
 	background-color: #2B2929;
 	padding: 40px 0;
