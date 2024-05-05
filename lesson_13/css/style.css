@@ -476,7 +476,7 @@ body {
 	content: '';
 	width: 24px;
 	height: 24px;
-	background: url(/img/krovato/hottest/check.svg) 0 0 / contain no-repeat ;
+	background: url("../img/krovato/hottest/check.svg") 0 0 / contain no-repeat ;
 }
 .item-hottest__bottom {
 }
