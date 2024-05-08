@@ -262,8 +262,6 @@ body {
 .checkout {
 	color: #2B2929;
 }
-.checkout__container {
-}
 .checkout__title {
 	font-size: 40px;
 	font-weight: 600;
@@ -276,16 +274,16 @@ body {
 	display: flex;
 }
 .form-checkout__place {
+	border-radius: 8px;
+	background: #FFF;
+
 	flex-basis: 740px;
 	flex-shrink: 0;
 	flex-grow: 0;
+	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+
 }
 .form-checkout__section {
-	border-radius: 8px;
-
-	/* height: 500px; */
-	background: #FFF;
-	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
 }
 .section-form {
 	padding: 30px;
@@ -361,10 +359,6 @@ body {
 	outline: 1px solid #333;
 	outline-offset: 5px;
 }
-.checkbox__input:checked + .checkbox__text::before {
-	background: url('../img/krovato/checkout/checked.svg') 0 2px / contain no-repeat #ffbc57;
-	border: 3px solid #ffbc57;
-}
 .checkbox__text {
 	font-size: 18px;
 	font-weight: 700;
@@ -382,7 +376,10 @@ body {
 	border-radius: 2px;
 	border: 3px solid #D1D5D5;
 }
-
+.checkbox__input:checked + .checkbox__text::before {
+	background: url('../img/krovato/checkout/checked.svg') 0 2px / contain no-repeat #ffbc57;
+	border: 3px solid #ffbc57;
+}
 /* ------------------------------------ */
 
 .section-form__label--delivery::before {
@@ -434,10 +431,17 @@ body {
 	height: 0;
 	opacity: 0;
 }
-.radio-item__input:checked + .radio-item{
-	border: 3px solid #b50000;
+.radio-item:has(.radio-item__input:focus-visible){
+	outline: 3px solid #FFBC57;
 }
+.radio-item:has(.radio-item__input:checked){
+	border: 3px solid #FFBC57;
+	background-color: #f8f8f8;
+}
+/* .radio-item:has(.radio-item__input:checked){
+	animation: swap-icon 0.3s forwards;
 
+} */
 
 .radio-item__type {
 	font-size: 16px;
@@ -451,21 +455,63 @@ body {
 	line-height: 1.46;
 }
 
-
-
-/* @keyframes swap-icon {
+@keyframes swap-icon {
 	50% {
 		transform: scale(0);
 	}
 	100% {
-		background-image: url('../img/krovato/checkout/delivery/check-circle.svg');
+		background: url('../img/krovato/checkout/delivery/check-circle.svg') 0 0 no-repeat;
 	}
-} */
-/* .radio-item__input:checked + .radio-item::before {
-	animation: swap-icon 0.3s forwards;
-} */
+} 
 
-/* .radio-item__input:focus-visible + .radio-item {
-	outline: 1px solid #333;
-	outline-offset: 5px;
-} */
+/* ------------------------------------ */
+
+.section-form__map {
+	border-radius: 8px;
+	background: #F8F8F8;
+	padding: 20px;
+}
+.map-box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.map-box__info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.map-box::before {
+	content: '';
+	width: 40px;
+	height: 40px;
+	background: url('../img/krovato/checkout/delivery/address/location.svg') 0 0 / contain no-repeat;
+}
+.map-box__schedule {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.87;
+}
+.map-box__address {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4; 
+}
+.map-box__link {
+	border-radius: 8px;
+	color: #FFFFFF;
+	padding: 13px 20px;
+	background-color: #FFBC57;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.26;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.map-box__link::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background: url('../img/krovato/checkout/delivery/address/map.svg') 0 0 / cover no-repeat;
+}
