@@ -276,7 +276,7 @@ body {
 	background: #FFF;
 
 	flex-basis: 740px;
-	flex-shrink: 0;
+	flex-shrink: 1;
 	flex-grow: 0;
 	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
 }
