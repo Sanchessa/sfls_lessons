@@ -256,10 +256,8 @@ body {
 
 /* ------------------------------------ */
 
-.section__checkout {
-	padding: 65px 0 70px;
-}
 .checkout {
+	padding: 65px 0 70px;
 	color: #2B2929;
 }
 .checkout__title {
@@ -281,7 +279,6 @@ body {
 	flex-shrink: 0;
 	flex-grow: 0;
 	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
-
 }
 .form-checkout__section {
 }
@@ -293,6 +290,7 @@ body {
 .section-form:not(:last-child) {
 	border-bottom: 5px solid #F8F8F8;
 }
+
 .section-form__label {
 	font-size: 26px;
 	font-weight: 600;
@@ -303,6 +301,9 @@ body {
 }
 .section-form__label:not(:last-child) {
 	margin-bottom: 30px;
+}
+.section-form__label:last-child {
+	margin-bottom: 0px;
 }
 .section-form__label--info::before {
 	content: '';
@@ -375,6 +376,7 @@ body {
 	height: 22px;
 	border-radius: 2px;
 	border: 3px solid #D1D5D5;
+	background-position: 0px 2px;
 }
 .checkbox__input:checked + .checkbox__text::before {
 	background: url('../img/krovato/checkout/checked.svg') 0 2px / contain no-repeat #ffbc57;
@@ -551,24 +553,22 @@ body {
 	height: 60px;
 }
 
-
-
 .payment-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 24px;
 }
 .payment-box__radio {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 .radio-payment {
-}
-.radio-payment__input {
-}
-.radio-payment__text {
-}
-
-.radio {
 	position: relative;
 	cursor: pointer;
 }
-.radio__input {
+.radio-payment__input {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -576,27 +576,86 @@ body {
 	height: 0;
 	opacity: 0;
 }
-.radio__input:focus-visible + .radio__text {
-	outline: 1px solid #000000;
-	outline-offset: 5px;
-}
-.radio__input:checked + .radio__text::before {
-	background-color: black;
-}
-.radio__text {
+.radio-payment__text {
 	font-size: 18px;
 	font-weight: 700;
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 }
-.radio__text::before {
+
+.radio-payment__text::before {
 	content: '';
 	transition: all 0.3s;
 	align-self: flex-start;
 	flex-shrink: 0;
 	border-radius: 50%;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #7a9369;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #B1B1B1;
+	background-position: center;
+}
+
+.radio-payment__input:focus-visible + .radio-payment__text {
+	outline: 1px solid #000000;
+	outline-offset: 5px;
+}
+.radio-payment__input:checked + .radio-payment__text::before {
+	background: url('../img/krovato/checkout/checked.svg') center no-repeat #ffbc57;
+	border: 1px solid #ffbc57;
+}
+
+/* ------------------------------------ */
+
+.section-form__label--coment::before {
+	content: '';
+	flex-basis: 60px;
+	flex-shrink: 0;
+	align-self: flex-start;
+	border-radius: 50%;
+	background: url('../img/krovato/checkout/icons/icon-comment.svg') center no-repeat;
+	width: 60px;
+	height: 60px;
+}
+
+.coment-box__textarea {
+	border-radius: 8px;
+	border: 1px solid #D1D5D5;
+	padding: 10px 20px;
+	font-weight: 400;
+	line-height: 1.87;
+	min-height: 150px;
+	resize: vertical;
+	transition: border-color 0.3s;
+}
+.coment-box__textarea:hover {
+	border-color: #fea828;
+}
+.coment-box__textarea::placeholder {
+	color: #535353;
+}
+
+.form-button {
+	margin-top: 30px;
+	border-radius: 8px;
+	background: #FFBC57;
+	color: #FFF;
+	text-align: center;
+
+	padding: 8px 30px;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.26;
+	transition: background-color 0.3s;
+}
+.form-button:hover {
+	background-color: #fea828;
+}
+
+.footer {
+	background-color: #2B2929;
+	padding: 40px 0;
+}
+.footer__logo {
+	text-align: center;
 }

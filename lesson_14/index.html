@@ -142,25 +142,25 @@
 		</header>
 
 		<main class="main">
-			<div class="section__checkout checkout">
+			<div class="checkout">
 				<div class="checkout__container">
 					<h2 class="checkout__title">Оформлення замовлення</h2>
 					<form enctype="multipart/form-data" action="form[]" class="checkout__form form-checkout">
 						<div class="form-checkout__place">
 
 							<section class="form-checkout__section section-form">
-								<label for="userinfo-input"
+								<label for="id-1"
 									class="section-form__label section-form__label--info">Інформація про покупця</label>
 								<div class="section-form__box">
-									<input name="form[]" id="userinfo-input" required placeholder="Призвіще" type="text"
+									<input name="form[]" id="id-1" required placeholder="Призвіще" type="text"
 										class="section-form__input">
-									<input name="form[]" id="userinfo-input" required placeholder="Контактний телефон"
+									<input name="form[]" id="id-2" required placeholder="Контактний телефон"
 										type="tel" class="section-form__input">
-									<input name="form[]" id="userinfo-input" required placeholder="Ім’я" type="text"
+									<input name="form[]" id="id-3" required placeholder="Ім’я" type="text"
 										class="section-form__input">
-									<input name="form[]" id="userinfo-input" required placeholder="E-mail" type="email"
+									<input name="form[]" id="id-4" required placeholder="E-mail" type="email"
 										class="section-form__input">
-									<input name="form[]" id="userinfo-input" placeholder="По батькові" type="text"
+									<input name="form[]" id="id-5" placeholder="По батькові" type="text"
 										class="section-form__input">
 								</div>
 								<label for="userinfo-checkbox" class="section-form__checkbox checkbox">
@@ -170,7 +170,7 @@
 							</section>
 
 							<section class="form-checkout__section section-form">
-								<label for="delivery-input"
+								<label for="#"
 									class="section-form__label section-form__label--delivery">Вибір способу доставки</label>
 								<div class="section-form__box form-box">
 									<label for="delivery-pickup" class="form-box__radio radio-item radio-item--pickup">
@@ -182,14 +182,14 @@
 									<label for="delivery-post" class="form-box__radio radio-item radio-item--newpost">
 										<input type="radio" id="delivery-post" value="newpost" name="delivery"
 											class="radio-item__input">
-										<span class="radio-item__type">Самовивіз із магазину</span>
-										<span class="radio-item__cost">Бесплатно</span>
+										<span class="radio-item__type">Доставка Нова Пошта</span>
+										<span class="radio-item__cost">≈ від 500 грн</span>
 									</label>
 									<label for="delivery-courier" class="form-box__radio radio-item radio-item--courier">
 										<input type="radio" id="delivery-courier" value="courier" name="delivery"
 											class="radio-item__input">
-										<span class="radio-item__type">Самовивіз із магазину</span>
-										<span class="radio-item__cost">Бесплатно</span>
+										<span class="radio-item__type">Доставка кур'єром</span>
+										<span class="radio-item__cost">≈ від 200 грн</span>
 									</label>
 								</div>
 								<div class="section-form__map map-box">
@@ -204,26 +204,60 @@
 							</section>
 
 							<section class="form-checkout__section section-form">
-								<label for="delivery-input" class="section-form__label section-form__label--payment">Вибір способу оплати</label>
+								<label for="#" class="section-form__label section-form__label--payment">Вибір способу оплати</label>
 								<div class="section-form__payment payment-box">
 									<label class="payment-box__radio radio-payment">
 										<input type="radio" name="radio-name" class="radio-payment__input">
-										<span class="radio-payment__text">Обери мене</span>
+										<span class="radio-payment__text">Готівкою при отриманні (Післясплата)</span>
+									</label>
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" checked class="radio-payment__input">
+										<span class="radio-payment__text">Оплата карткою на сайті</span>
+										<img src="img/krovato/checkout/payment/master-card-logo.svg" alt="Зображження платіжної системи">
+										<img src="img/krovato/checkout/payment/visa-card-logo.svg" alt="Зображження платіжної систем">
 									</label>
 									<label class="payment-box__radio radio-payment">
 										<input type="radio" name="radio-name" class="radio-payment__input">
-										<span class="radio-payment__text">Або мене</span>
+										<span class="radio-payment__text">Privat Pay</span>
+										<img src="img/krovato/checkout/payment/privat-pay-logo.svg" alt="Зображження платіжної системи">
+									</label>
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" class="radio-payment__input">
+										<span class="radio-payment__text">Кредит від Krovato</span>
+									</label>
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" class="radio-payment__input">
+										<span class="radio-payment__text">Оплата частинами ПриватБанк</span>
+										<img src="img/krovato/checkout/payment/privaty-credit-logo.svg" alt="Зображження платіжної системи">
+									</label>
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" class="radio-payment__input">
+										<span class="radio-payment__text">Оплата частинами МоноБанк</span>
+										<img src="img/krovato/checkout/payment/mono-bank-logo.svg" alt="Зображження платіжної системи">
 									</label>
 								</div>
 							</section>
 
+							<section class="form-checkout__section section-form">
+								<label for="#" class="section-form__label section-form__label--coment">Коментар до замовлення</label>
+								<div class="section-form__coment coment-box">
+									<textarea class="coment-box__textarea" placeholder="Ваш коментар"></textarea>
+								</div>
+								<button type="submit" class="form-button">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+							</section>
 						</div>
 					</form>
 				</div>
 			</div>
 		</main>
 
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/krovato/logo-footer.svg" alt="Логотип">
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 
