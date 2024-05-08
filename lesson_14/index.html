@@ -147,6 +147,7 @@
 					<h2 class="checkout__title">Оформлення замовлення</h2>
 					<form enctype="multipart/form-data" action="form[]" class="checkout__form form-checkout">
 						<div class="form-checkout__place">
+
 							<section class="form-checkout__section section-form">
 								<label for="userinfo-input"
 									class="section-form__label section-form__label--info">Інформація про покупця</label>
@@ -170,22 +171,21 @@
 
 							<section class="form-checkout__section section-form">
 								<label for="delivery-input"
-									class="section-form__label section-form__label--delivery">Вибір способу
-									доставки</label>
+									class="section-form__label section-form__label--delivery">Вибір способу доставки</label>
 								<div class="section-form__box form-box">
-									<label for="delivery-pickup" class="form-box__radio radio-item">
+									<label for="delivery-pickup" class="form-box__radio radio-item radio-item--pickup">
 										<input type="radio" id="delivery-pickup" value="pickup" name="delivery"
 											class="radio-item__input" checked>
 										<span class="radio-item__type">Самовивіз із магазину</span>
 										<span class="radio-item__cost">Бесплатно</span>
 									</label>
-									<label for="delivery-post" class="form-box__radio radio-item">
+									<label for="delivery-post" class="form-box__radio radio-item radio-item--newpost">
 										<input type="radio" id="delivery-post" value="newpost" name="delivery"
 											class="radio-item__input">
 										<span class="radio-item__type">Самовивіз із магазину</span>
 										<span class="radio-item__cost">Бесплатно</span>
 									</label>
-									<label for="delivery-courier" class="form-box__radio radio-item">
+									<label for="delivery-courier" class="form-box__radio radio-item radio-item--courier">
 										<input type="radio" id="delivery-courier" value="courier" name="delivery"
 											class="radio-item__input">
 										<span class="radio-item__type">Самовивіз із магазину</span>
@@ -202,9 +202,21 @@
 									</a>
 								</div>
 							</section>
+
 							<section class="form-checkout__section section-form">
-								.
+								<label for="delivery-input" class="section-form__label section-form__label--payment">Вибір способу оплати</label>
+								<div class="section-form__payment payment-box">
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" class="radio-payment__input">
+										<span class="radio-payment__text">Обери мене</span>
+									</label>
+									<label class="payment-box__radio radio-payment">
+										<input type="radio" name="radio-name" class="radio-payment__input">
+										<span class="radio-payment__text">Або мене</span>
+									</label>
+								</div>
 							</section>
+
 						</div>
 					</form>
 				</div>

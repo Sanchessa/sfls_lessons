@@ -380,6 +380,7 @@ body {
 	background: url('../img/krovato/checkout/checked.svg') 0 2px / contain no-repeat #ffbc57;
 	border: 3px solid #ffbc57;
 }
+
 /* ------------------------------------ */
 
 .section-form__label--delivery::before {
@@ -415,11 +416,25 @@ body {
 	transition: all 0.3s;
 }
 
-.radio-item::before {
+.radio-item--pickup::before {
+	content: '';
+	width: 40px;
+	height: 40px;
+	background: url('../img/krovato/checkout/delivery/shop.svg') 0 0 no-repeat;
+	margin-bottom: 10px;
+}
+.radio-item--newpost::before {
 	content: '';
 	width: 40px;
 	height: 40px;
 	background: url('../img/krovato/checkout/delivery/np.svg') 0 0 no-repeat;
+	margin-bottom: 10px;
+}
+.radio-item--courier::before {
+	content: '';
+	width: 40px;
+	height: 40px;
+	background: url('../img/krovato/checkout/delivery/deliver.svg') 0 0 no-repeat;
 	margin-bottom: 10px;
 }
 
@@ -438,10 +453,9 @@ body {
 	border: 3px solid #FFBC57;
 	background-color: #f8f8f8;
 }
-/* .radio-item:has(.radio-item__input:checked){
+.radio-item:has(.radio-item__input:checked)::before{
 	animation: swap-icon 0.3s forwards;
-
-} */
+}
 
 .radio-item__type {
 	font-size: 16px;
@@ -508,10 +522,81 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	transition: all 0.3s;
+}
+.map-box__link:hover {
+	background-color: #fea828;
 }
 .map-box__link::before {
 	content: '';
 	width: 24px;
 	height: 24px;
 	background: url('../img/krovato/checkout/delivery/address/map.svg') 0 0 / cover no-repeat;
+	transition: transform 0.5s;
+}
+.map-box__link:hover::before {
+	transform: rotate(180deg);
+}
+
+/* ------------------------------------ */
+
+.section-form__label--payment::before {
+	content: '';
+	flex-basis: 60px;
+	flex-shrink: 0;
+	align-self: flex-start;
+	border-radius: 50%;
+	background: url('../img/krovato/checkout/icons/icon-oplata.svg') center no-repeat;
+	width: 60px;
+	height: 60px;
+}
+
+
+
+.payment-box {
+}
+.payment-box__radio {
+}
+.radio-payment {
+}
+.radio-payment__input {
+}
+.radio-payment__text {
+}
+
+.radio {
+	position: relative;
+	cursor: pointer;
+}
+.radio__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.radio__input:focus-visible + .radio__text {
+	outline: 1px solid #000000;
+	outline-offset: 5px;
+}
+.radio__input:checked + .radio__text::before {
+	background-color: black;
+}
+.radio__text {
+	font-size: 18px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.radio__text::before {
+	content: '';
+	transition: all 0.3s;
+	align-self: flex-start;
+	flex-shrink: 0;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #7a9369;
 }
