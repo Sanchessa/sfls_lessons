@@ -336,6 +336,10 @@ body {
 	.phone-header__info, .header__phone::after{
 		display: none;
 	}
+	.header__container--bottom {
+		flex-direction: column;
+		tac
+	}
 }
 @media (max-width: 1021px) {
 	.header__top {
