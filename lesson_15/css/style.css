@@ -338,6 +338,9 @@ body {
 	}
 }
 @media (max-width: 1021px) {
+	.header__top {
+		background-color: #fff;
+	}
 	.header__logo--top {
 		display: block;
 		flex-grow: 1;
@@ -383,17 +386,20 @@ body {
 	}
 }
 @media (max-width: 767.98px) {
-	.header__top {
-		background-color: #fff;
+	.header__container--top {
+		gap: 20px;
 	}
-	.consult-header,
-	.header__box{
+	.messages-consult{
 		display: none;
 	}
+	/* .consult-header,
+	.header__box{
+		display: none;
+	} */
 	.header__phone-top {
 		display: block;
 	}
-	.phone-header__item--center {
+	.phone-header, .phone-header__item--center {
 		display: none;
 	}
 	.header__logo--top {
@@ -401,7 +407,12 @@ body {
 		flex-grow: 1;
 	}
 }
-@media (max-width: 650px) {
+@media (max-width: 640px) {
+	.header__box{
+		display: none;
+	}
+}
+@media (max-width: 560px) {
 	.form-header {
 		display: none;
 	}
