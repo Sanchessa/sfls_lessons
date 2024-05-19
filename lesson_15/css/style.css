@@ -338,7 +338,6 @@ body {
 	}
 	.header__container--bottom {
 		flex-direction: column;
-		tac
 	}
 }
 @media (max-width: 1021px) {
